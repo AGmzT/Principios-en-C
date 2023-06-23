@@ -4,9 +4,6 @@
 #include <stdlib.h>
 using namespace std;
 
-
-
-
 int tablero[4][4]; /** @brief tablero de juego*/
 int auxiliar[4][4]; /** @brief tablero auxiliar*/
 int puntaje = 0; /** @brief puntaje*/
@@ -58,7 +55,6 @@ void rellenarCampo(int cantidad, char campo[], char entrada[]){
  * reescribrirlos de forma segura
  * @param campo arreglo a reescribirlos
 */
- 
 void limpiarArreglo(char campo[]){
     int c = 0;
     while(campo[c]!= '\0'){
@@ -131,7 +127,6 @@ void crearJugador(char alias[], char cedula[], char nombre[], char apellido[], c
 /**
  * @brief Modifica el juegador
  * @param indice lugar que ocupa el jugador en listaJugadores
- * 
 */
 void modificarJugador(int indice){
     rellenarCampo(10, listaJugadores[indice].alias, jugadorLog.alias);
@@ -396,8 +391,7 @@ void imprimirTablero(){ // imprime el tablero
     printf("-----------------------------------------------------------------\n");
 }
 
-/**
- * @brief crea el tablero inicial con todos los valores en 0,
+/** @brief crea el tablero inicial con todos los valores en 0,
     excepto dos posiciones random a las que se asigna el valor 2.
 */
 void tableroInicial(){
@@ -461,7 +455,7 @@ void estado(){
 }
 
 /** @brief genera un tablero auxiliar copia del tablero original
-    para hacer una comparacion 
+    para hacer una comparacion
 */
 void crearAuxiliar(){
     for(int i = 0; i < 4; i++){
@@ -472,7 +466,8 @@ void crearAuxiliar(){
 }
 
 /** @brief Genera un nuevo valor, 2 o 4, en una celda con valor 0, 
-    siempre y cuando el movimiento anterior haya modificado el tablero*/
+    siempre y cuando el movimiento anterior haya modificado el tablero
+*/
 void nuevoValor(){
 
     int contador = 0;// contador de diferencias entre tableros
@@ -717,7 +712,7 @@ void jugar(){  /** @brief realiza la mecanica del juego*/
     }while(seguirJugando == true);
 }
 
-void presentasion(){
+void presentacion(){
     printf("    ////////   /////////   //     //   /////////\n");
     printf("          //   //     //   //     //   //     //\n");
     printf("          //   //     //   //     //   //     //\n");
@@ -729,7 +724,6 @@ void presentasion(){
 
 void menuPrincipal();
 void menuJugador();
-
 
 void menuEstadisticas(){
     bool seguir = true;
@@ -983,8 +977,7 @@ void menuPrincipal(){
     }while(seguir);
 }
 
-/**
- * @brief establece datos iniciales con los cuales hacer test de funcionalidades
+/** @brief establece datos iniciales con los cuales hacer test de funcionalidades
 */
 void datosIniciales(){
     char entrada01[10] = {'P','e','d','r','o','1','2','3','4','5'};
@@ -1060,8 +1053,7 @@ void datosIniciales(){
 
 int main(){
     datosIniciales();
+    presentacion();
     menuPrincipal();
-    //menuEstadisticas();
-    
     return 0;
 }
