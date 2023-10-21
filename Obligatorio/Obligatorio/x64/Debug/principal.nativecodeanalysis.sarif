@@ -1,0 +1,75 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.37.32825.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/programacion/c++/obligatorio/obligatorio/principal.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "e75e04b596c0a66701a7d228ad01a59f53191c1195563ec4c3a87aa49da270de"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programacion/c++/obligatorio/obligatorio/linea.h"
+          },
+          "hashes": {
+            "sha-256": "7e8cc2b84168afe678e863a05ceeebb438ec4ffbdc3698896db67833e0b02b62"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programacion/c++/obligatorio/obligatorio/fila.h"
+          },
+          "hashes": {
+            "sha-256": "065d4eff923db768faf1bd67c1346060ba594bf2e5ccabbbdec344c12e0f5a9b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programacion/c++/obligatorio/obligatorio/archivo.h"
+          },
+          "hashes": {
+            "sha-256": "7b06a59725bc58b70e0bf003735f9b633ccc8d44ab750fe363957f24fdb079b4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programacion/c++/obligatorio/obligatorio/directorio.h"
+          },
+          "hashes": {
+            "sha-256": "f3c9aa12f17a869eccc25a22355d7bc136d5b7c80dc64ca3684b9b1c1bf991d8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programacion/c++/obligatorio/obligatorio/utils.h"
+          },
+          "hashes": {
+            "sha-256": "24f0a7a758b8adbf6d6006e5ba198f946f044767d5cfb780b578a382ecf2ff4c"
+          }
+        }
+      ]
+    }
+  ]
+}

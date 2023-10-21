@@ -1,0 +1,51 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.37.32825.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/programacion/c++/obligatorio/obligatorio/fila.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "aa53fd3b596f0c70da396c96c352d9dd6b6a2e4b95bf8c8703367d110b1911a5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programacion/c++/obligatorio/obligatorio/fila.h"
+          },
+          "hashes": {
+            "sha-256": "065d4eff923db768faf1bd67c1346060ba594bf2e5ccabbbdec344c12e0f5a9b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programacion/c++/obligatorio/obligatorio/linea.h"
+          },
+          "hashes": {
+            "sha-256": "7e8cc2b84168afe678e863a05ceeebb438ec4ffbdc3698896db67833e0b02b62"
+          }
+        }
+      ]
+    }
+  ]
+}
